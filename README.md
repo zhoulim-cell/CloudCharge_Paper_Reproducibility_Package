@@ -66,22 +66,22 @@ Additional validation and regression tests are available under `model/tests/`.
 ## Data availability
 
 Large numerical outputs and final publication figures are deposited separately
-in Zenodo.
+in a Zenodo Dataset.
 
 **Dataset DOI:** `https://doi.org/10.5281/zenodo.DATA_DOI`
 
-After Zenodo assigns the real DOI, replace the placeholder above and the
-matching placeholders in `docs/AGU_OPEN_RESEARCH.md`.
+After Zenodo assigns the real dataset DOI, replace the placeholder above and
+the matching placeholders in `docs/AGU_OPEN_RESEARCH.md`.
 
 ## Citation
 
-The GitHub `v5.0.0` release will be archived by Zenodo and assigned a
-version-specific software DOI.
+CloudCharge v5.0.0 is archived in Zenodo and has the following
+version-specific software DOI:
 
-**Software DOI:** `https://doi.org/10.5281/zenodo.SOFTWARE_DOI`
+**Software DOI:** https://doi.org/10.5281/zenodo.23879986
 
-Please use the version-specific DOI in the JGR paper rather than citing only
-the mutable GitHub `main` branch.
+Please cite the Zenodo software record rather than only the mutable GitHub
+`main` branch.
 
 ## License
 

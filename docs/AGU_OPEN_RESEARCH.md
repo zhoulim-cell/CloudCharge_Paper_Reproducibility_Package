@@ -9,8 +9,7 @@ The archived software is released under the MIT License.
 
 The numerical model outputs and processed data supporting the figures, tables,
 and Supporting Information are archived separately in Zenodo (Zhou, 2026b;
-https://doi.org/10.5281/zenodo.DATA_DOI). The research data are released under
-CC BY 4.0.
+https://doi.org/10.5281/zenodo.23880373). The research data are released under CC BY 4.0.
 
 ## References to add to the manuscript
 
@@ -20,4 +19,4 @@ https://doi.org/10.5281/zenodo.23879986
 
 Zhou, L. (2026b). *Data supporting “Charge-Resolved Transient Electrification
 at Layer-Cloud Boundaries”* (Version 1.0) [Dataset]. Zenodo.
-https://doi.org/10.5281/zenodo.DATA_DOI
+https://doi.org/10.5281/zenodo.23880373

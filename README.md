@@ -66,12 +66,9 @@ Additional validation and regression tests are available under `model/tests/`.
 ## Data availability
 
 Large numerical outputs and final publication figures are deposited separately
-in a Zenodo Dataset.
+in Zenodo.
 
-**Dataset DOI:** `https://doi.org/10.5281/zenodo.DATA_DOI`
-
-After Zenodo assigns the real dataset DOI, replace the placeholder above and
-the matching placeholders in `docs/AGU_OPEN_RESEARCH.md`.
+**Dataset DOI:** https://doi.org/10.5281/zenodo.23880373
 
 ## Citation
 
@@ -80,8 +77,12 @@ version-specific software DOI:
 
 **Software DOI:** https://doi.org/10.5281/zenodo.23879986
 
-Please cite the Zenodo software record rather than only the mutable GitHub
-`main` branch.
+The paper-supporting numerical outputs and figure data are archived separately:
+
+**Dataset DOI:** https://doi.org/10.5281/zenodo.23880373
+
+Please cite the Zenodo software and dataset records rather than only the mutable
+GitHub `main` branch.
 
 ## License
 

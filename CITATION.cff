@@ -4,6 +4,8 @@ title: "CloudCharge: Charge-Resolved Transient Electrification Model for Layer-C
 type: software
 version: 5.0.0
 date-released: 2026-11-02
+doi: "10.5281/zenodo.23879986"
+url: "https://doi.org/10.5281/zenodo.23879986"
 authors:
   - family-names: "Zhou"
     given-names: "Limin"

@@ -1,0 +1,5 @@
+﻿Response,Slope per pA m⁻²,Intercept,R²,Unit
+Upper peak mean charge,4.470,11.302,0.999,e
+Lower peak mean charge,−4.714,−10.670,1.000,e
+Upper integrated charge,0.292,0.169,1.000,nC m⁻²
+Lower integrated charge,−0.294,−0.129,1.000,nC m⁻²

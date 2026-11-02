@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the archived Zenodo release and the associated JGR: Atmospheres paper."
+title: "CloudCharge: Charge-Resolved Transient Electrification Model for Layer-Cloud Boundaries"
+type: software
+version: 5.0.0
+date-released: 2026-11-02
+authors:
+  - family-names: "Zhou"
+    given-names: "Limin"
+    affiliation: "East China Normal University"
+repository-code: "https://github.com/zhoulim-cell/CloudCharge_Paper_Reproducibility_Package"
+keywords:
+  - atmospheric electricity
+  - global electric circuit
+  - layer cloud
+  - cloud-edge electrification
+  - charge-resolved microphysics
+  - aerosol scavenging
+license: MIT

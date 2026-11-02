@@ -1,0 +1,14 @@
+﻿Parameter,Expanded reference,Compact ensemble,ZT07 limit
+Cloud altitude,4 km,4 km,4 km
+Vertical geometry,30 + 10 + 21 + 10 + 30 m,2 + 10 + 11 + 10 + 2 m,2 + 10 + 11 + 10 + 2 m
+Vertical grid,695 points,61-481 points,351 points
+Outer electrical boundary,Clear-air reservoirs,One-sided ion inflow,Compact one-sided local ion boundary (no clear-air reservoir)
+Droplets,3-20 µm distribution,3-20 µm distribution,10 µm monodisperse
+Droplet number maximum,2×10⁸ m⁻³,2×10⁸ m⁻³,2×10⁸ m⁻³
+Aerosols,5-500 nm distribution,5-500 nm distribution,40 nm monodisperse
+Aerosol concentration,1×10⁹ m⁻³,1×10⁹ m⁻³,5×10⁹ m⁻³
+Ion-pair production,8×10⁶ m⁻³ s⁻¹,2–40×10⁶ m⁻³ s⁻¹,8×10⁶ m⁻³ s⁻¹
+Current forcing,1.5 to 3.0 pA m⁻² at 300 s,Constant or stepped,3.0 pA m⁻² from t=0
+Particle eddy diffusion,0.02 m² s⁻¹,Varied,Off
+Particle transport,On,Varied,Off
+Duration,600 s,600 s,5000 s

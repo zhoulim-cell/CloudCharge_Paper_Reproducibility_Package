@@ -1,0 +1,12 @@
+﻿Metric,Upper boundary,Lower boundary,Unit
+Total-space-charge maximum,+0.830,−0.850,10⁻¹⁰ C m⁻³
+Position of total-charge maximum,30.853,70.147,m
+Distance inside nominal outer cloud boundary,0.853,0.853,m
+Peak mean droplet charge,+8.775,−10.716,e
+Position of mean-charge extremum,30.125,70.875,m
+Mean droplet charge at total-charge maximum,+8.110,-9.207,e
+Mean/total peak separation,0.728,0.728,m
+Droplet charge standard deviation at total maximum,10.343,11.215,e
+Integrated charge sheet,+0.545,−0.552,nC m⁻²
+Distance from total maximum to 1% clear-air tail,14.0,13.7,m
+Boundary/peak charge-density ratio,1.3×10⁻⁵,1.3×10⁻⁵,-

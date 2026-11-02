@@ -1,0 +1,12 @@
+{
+  "upper_peak_droplet_charge_e": 20.220585005445944,
+  "lower_peak_droplet_charge_e": -20.29465587258832,
+  "upper_integrated_space_charge_c_m2": 7.317047023458442e-10,
+  "lower_integrated_space_charge_c_m2": -6.981167314291829e-10,
+  "opposite_droplet_sign_test": true,
+  "opposite_space_charge_sign_test": true,
+  "final_max_gauss_residual_v_m2": 23.703853756651533,
+  "final_max_relative_gauss_residual": 0.017595122047917758,
+  "final_max_boundary_gauss_residual_v_m2": 23.703853756651533,
+  "final_max_relative_total_current_residual": 0.0196862224877099
+}

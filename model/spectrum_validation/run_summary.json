@@ -1,0 +1,11 @@
+{
+  "solver_mode": "paper2012_spectrum",
+  "final_time_s": 10000.0,
+  "cloud_top_peak_charge_e": 96.51077452379273,
+  "cloud_base_peak_charge_e": -111.2898738200516,
+  "opposite_droplet_sign_test": true,
+  "opposite_space_charge_sign_test": true,
+  "response_tau_used_s": NaN,
+  "post_step_tau_top_s": 1335.0468420055433,
+  "post_step_tau_bottom_s": 1333.6709448629383
+}

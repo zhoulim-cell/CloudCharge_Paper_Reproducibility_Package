@@ -1,0 +1,8 @@
+﻿State,Time (s),Upper peak (e),Upper z (m),Lower peak (e),Lower z (m)
+Transient,60,+3.72,3.30,-4.09,31.70
+Transient,300,+23.47,3.50,−26.45,31.60
+Transient,600,+39.53,3.70,−44.07,31.40
+Transient,1000,+52.29,3.90,−57.45,31.30
+Transient,2000,+65.11,4.20,−69.90,30.90
+Transient,5000,+68.52,4.70,−72.36,30.50
+ZT07 equilibrium,-,+73.86,4.40,−76.93,30.80

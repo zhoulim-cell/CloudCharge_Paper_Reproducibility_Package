@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "config": {
+      "base": {
+        "atmosphere": {
+          "altitude_km": 4.0,
+          "ion_pair_production_m3_s": 8000000.0,
+          "current_density_a_m2": 1.5e-12,
+          "recombination_m3_s": 1.65e-12,
+          "positive_mobility_ref_m2_v_s": 0.00014,
+          "negative_mobility_ref_m2_v_s": 0.00019
+        },
+        "aerosol": {
+          "total_number_m3": 1000000000.0,
+          "mean_radius_m": 4e-08
+        },
+        "droplet": {
+          "spectrum_mode": "fixed_peak",
+          "fixed_peak_number_m3": 200000000.0,
+          "initial_radius_m": 8e-06,
+          "target_radius_m": 1e-05,
+          "growth_time_s": 0.0,
+          "max_abs_charge_e": 500.0
+        },
+        "spectrum": {
+          "radius_bins": 8,
+          "radius_min_m": 3e-06,
+          "radius_max_m": 2e-05,
+          "radius_spacing": "log",
+          "initial_size_distribution": "lognormal",
+          "geometric_std": 1.3,
+          "charge_min_e": -120,
+          "charge_max_e": 120,
+          "initial_charge_mode": "neutral",
+          "initial_charge_std_e": 1.0,
+          "charge_boundary": "reflecting",
+          "growth_law": "scaled_radius",
+          "include_spectrum_feedback": true,
+          "carrier_coupling": "paper_constrained",
+          "store_full_spectrum": true,
+          "max_spectral_cells": 2000000,
+          "normalize_number_each_step": true,
+          "charge_subcycle_safety": 0.8
+        },
+        "domain": {
+          "length_m": 35.0,
+          "grid_points": 61,
+          "cloud_start_m": 2.0,
+          "edge_ramp_m": 10.0,
+          "core_width_m": 11.0
+        },
+        "time_dependent": {
+          "initial_current_density_a_m2": 1.5e-12,
+          "second_current_density_a_m2": 3e-12,
+          "initial_ion_pair_production_m3_s": 8000000.0,
+          "second_ion_pair_production_m3_s": 8000000.0,
+          "step_time_s": 5000.0,
+          "startup_end_s": 5000.0,
+          "total_duration_s": 10000.0,
+          "fit_time_constants": true
+        },
+        "physics": {
+          "solution_mode": "transient_charge_ode",
+          "attachment_mode": "paper2007_table",
+          "charging_mode": "revised",
+          "field_mode": "poisson_projection",
+          "field_anchor": "bottom",
+          "include_drift_charging": true,
+          "include_ion_diffusion": false,
+          "use_legacy_initialization": false
+        },
+        "numerics": {
+          "duration_s": 600.0,
+          "max_dt_s": 0.5,
+          "min_dt_s": 0.0001,
+          "positivity_safety": 0.8,
+          "field_iterations": 6,
+          "field_relaxation": 0.5,
+          "field_tolerance": 1e-06,
+          "conservative_smoothing": 0.0,
+          "bvp_tolerance": 1e-05,
+          "bvp_max_nodes": 30000,
+          "snapshot_times_s": [
+            0.0,
+            600.0
+          ],
+          "diagnostics_interval_s": 10.0
+        }
+      },
+      "aerosol_spectrum": {
+        "radius_bins": 6,
+        "radius_min_m": 5e-09,
+        "radius_max_m": 5e-07,
+        "geometric_mean_radius_m": 4e-08,
+        "geometric_std": 1.65,
+        "charge_min_e": -5,
+        "charge_max_e": 5,
+        "initial_charge_std_e": 0.8,
+        "measured_attachment_table": ""
+      },
+      "transport": {
+        "enabled": true,
+        "air_velocity_down_m_s": 0.0,
+        "eddy_diffusivity_m2_s": 0.02,
+        "ion_eddy_diffusivity_m2_s": 0.02,
+        "cloud_edge_pulsation_amplitude_m_s": 0.0,
+        "cloud_edge_pulsation_period_s": 900.0,
+        "include_droplet_sedimentation": false,
+        "include_condensational_growth": false,
+        "supersaturation_peak": 0.002,
+        "condensational_growth_coefficient_m2_s": 1e-10
+      },
+      "electrodynamics": {
+        "include_displacement_current": true,
+        "gauss_projection_relaxation": 0.5,
+        "electric_field_floor_v_m": -5000.0,
+        "electric_field_ceiling_v_m": 5000.0,
+        "include_ion_diffusion_current": true,
+        "enforce_global_charge_neutrality": false,
+        "projection_interval_steps": 1
+      },
+      "scavenging": {
+        "enabled": false,
+        "active_transfer": false,
+        "kernel_scale": 1.0,
+        "max_fraction_per_step": 0.05,
+        "include_brownian": true,
+        "include_interception": true,
+        "include_electrostatic": true,
+        "aerosol_density_kg_m3": 1800.0
+      },
+      "forcing": {
+        "current_mode": "step",
+        "ionization_mode": "step",
+        "step_time_s": 300.0,
+        "current_density_initial_a_m2": 1.5e-12,
+        "current_density_final_a_m2": 3e-12,
+        "ionization_initial_m3_s": 8000000.0,
+        "ionization_final_m3_s": 8000000.0,
+        "sinusoid_period_s": 3600.0,
+        "sinusoid_fractional_amplitude": 0.25,
+        "forbush_drop_fraction": 0.3,
+        "forbush_recovery_time_s": 1800.0
+      },
+      "numerics": {
+        "duration_s": 600.0,
+        "max_dt_s": 0.5,
+        "min_dt_s": 0.0001,
+        "cfl_safety": 0.45,
+        "diagnostics_interval_s": 10.0,
+        "snapshot_times_s": [
+          0,
+          60,
+          300,
+          360,
+          600
+        ],
+        "max_spectral_cells": 3000000,
+        "positivity_floor_m3": 0.0
+      },
+      "assimilation": {
+        "ensemble_size": 16,
+        "iterations": 3,
+        "inflation": 1.02,
+        "random_seed": 42,
+        "parameter_names": [
+          "current_scale",
+          "ionization_scale",
+          "aerosol_scale",
+          "eddy_diffusivity_scale"
+        ],
+        "prior_std_fraction": 0.25
+      }
+    },
+    "atmosphere": {
+      "altitude_km": 4.0,
+      "temperature_k": 260.4,
+      "pressure_hpa": 623.0818784445719,
+      "neutral_molecular_concentration_cm3": 1.6495645280135815e+19,
+      "mobility_scale": 1.355785377932215,
+      "positive_mobility_m2_v_s": 0.0001898099529105101,
+      "negative_mobility_m2_v_s": 0.00025759922180712086,
+      "positive_diffusivity_m2_s": 4.263036637393601e-06,
+      "negative_diffusivity_m2_s": 5.78554972217703e-06
+    },
+    "state_definition": {
+      "droplets": "N_d(r,k,z,t), bin-integrated m^-3",
+      "aerosols": "N_a(a,k,z,t), bin-integrated m^-3",
+      "ions": "n_+(z,t), n_-(z,t)",
+      "electric_field": "E_down(z,t), positive downward"
+    },
+    "innovations": [
+      "finite displacement current in total-current closure",
+      "charge-resolved aerosol and droplet spectra",
+      "vertical turbulent transport and sedimentation",
+      "optional radius-space condensation advection",
+      "optional charge-resolved electroscavenging",
+      "observation and ensemble-inversion ready output"
+    ],
+    "attachment_measurement_table": "theory_only",
+    "model_limits": "One-dimensional warm-layer-cloud research model. Turbulence is represented by eddy diffusion; the electroscavenging kernel is a compact hypothesis-testing kernel and should be calibrated against trajectory calculations or laboratory data before quantitative cloud-impact claims."
+  },
+  "snapshot_times_s": [
+    0.0,
+    60.0,
+    300.0,
+    360.0,
+    600.0
+  ],
+  "diagnostics_summary": {
+    "solver_mode": "frontier_multispectrum_maxwell",
+    "upper_peak_droplet_charge_e": 20.220585005445944,
+    "lower_peak_droplet_charge_e": -20.29465587258832,
+    "upper_integrated_space_charge_c_m2": 7.317047023458442e-10,
+    "lower_integrated_space_charge_c_m2": -6.981167314291829e-10,
+    "opposite_droplet_sign_test": true,
+    "opposite_space_charge_sign_test": true,
+    "final_max_gauss_residual_v_m2": 23.703853756651533,
+    "final_max_relative_gauss_residual": 0.017595122047917758,
+    "final_max_boundary_gauss_residual_v_m2": 23.703853756651533,
+    "final_max_relative_total_current_residual": 0.0196862224877099,
+    "time_steps": 1200.0
+  }
+}

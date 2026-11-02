@@ -1,0 +1,7 @@
+﻿Case,Upper peak (e),Lower peak (e),Upper sheet,Lower sheet,Max boundary/peak (%),Gauss residual (%)
+"Compact, 2-m margins",+21.38,−21.26,+0.774,−0.730,Not contained,4.32
+"30-m margins, one-sided inflow",+8.78,−10.72,+0.545,−0.552,43.28,0.77
+"20-m margins, reservoirs",+8.79,−10.76,+0.546,−0.554,0.00134,4.65
+"30-m margins, reservoirs",+8.78,−10.72,+0.545,−0.552,0.00134,4.25
+"50-m margins, reservoirs",+8.79,−10.75,+0.546,−0.554,0.00134,3.68
+"30-m margins, 11-m core",+8.80,−10.79,+0.549,−0.557,0.00134,4.44

@@ -1,0 +1,16 @@
+﻿Convergence family,Case,Resolution/value,Mean error (%),Gauss residual (%),Current residual (%)
+Vertical grid,AF_CONV_NZ_61,61,4.955,1.8,1.3
+Vertical grid,AF_CONV_NZ_121,121,1.769,2.9,1.7
+Vertical grid,AF_CONV_NZ_241,241,0.000,4.3,1.3
+Droplet-radius grid,AF_CONV_NDR_6,6,0.195,1.8,1.3
+Droplet-radius grid,AF_CONV_NDR_10,10,0.042,1.8,1.3
+Droplet-radius grid,AF_CONV_NDR_14,14,0.000,1.8,1.3
+Aerosol-radius grid,AF_CONV_NAR_4,4,0.953,1.7,1.3
+Aerosol-radius grid,AF_CONV_NAR_8,8,0.140,1.8,1.3
+Aerosol-radius grid,AF_CONV_NAR_12,12,0.000,1.9,1.3
+Charge-state extent,AF_CONV_QMAX_100,100 e,0.178,1.8,1.3
+Charge-state extent,AF_CONV_QMAX_180,180 e,3.876×10⁻⁴,1.8,1.3
+Charge-state extent,AF_CONV_QMAX_280,280 e,0.000,1.8,1.3
+Time step,AF_CONV_DT_0.25,0.25 s,0.000,2.4,0.4
+Time step,AF_CONV_DT_0.5,0.50 s,0.122,1.8,1.3
+Time step,AF_CONV_DT_1.0,1.00 s,0.357,2.0,1.1

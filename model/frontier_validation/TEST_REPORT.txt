@@ -1,0 +1,39 @@
+=== Python compile ===
+PASS
+
+=== Unit tests ===
+test_active_scavenging_removes_aerosol_and_preserves_drop_number (test_frontier.FrontierModelTests.test_active_scavenging_removes_aerosol_and_preserves_drop_number) ... ok
+test_boundary_polarity_emerges (test_frontier.FrontierModelTests.test_boundary_polarity_emerges) ... ok
+test_charge_birth_death_preserves_particle_number_without_transport (test_frontier.FrontierModelTests.test_charge_birth_death_preserves_particle_number_without_transport) ... ok
+test_electrostatic_kernel_has_expected_polarity_order (test_frontier.FrontierModelTests.test_electrostatic_kernel_has_expected_polarity_order) ... ok
+test_frontier_forward_is_finite_and_charge_resolved (test_frontier.FrontierModelTests.test_frontier_forward_is_finite_and_charge_resolved) ... ok
+test_observation_operator_roundtrip (test_frontier.FrontierModelTests.test_observation_operator_roundtrip) ... ok
+test_legacy_attachment_available (test_smoke.CloudChargeSmokeTests.test_legacy_attachment_available) ... ok
+test_paper2007_baseline_has_opposite_boundary_polarity (test_smoke.CloudChargeSmokeTests.test_paper2007_baseline_has_opposite_boundary_polarity) ... ok
+test_paper2007_table_matches_table1_baseline (test_smoke.CloudChargeSmokeTests.test_paper2007_table_matches_table1_baseline) ... ok
+test_paper2012_baseline_matches_reported_response (test_smoke.CloudChargeSmokeTests.test_paper2012_baseline_matches_reported_response) ... ok
+test_size_charge_spectrum_conserves_number_and_polarity (test_smoke.CloudChargeSmokeTests.test_size_charge_spectrum_conserves_number_and_polarity) ... ok
+test_transient_short_run_still_available (test_smoke.CloudChargeSmokeTests.test_transient_short_run_still_available) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 2.346s
+
+OK
+
+=== Environment ===
+Python: 3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]
+Platform: Linux-4.4.0-x86_64-with-glibc2.41
+numpy: 2.3.5
+scipy: 1.17.0
+matplotlib: 3.10.8
+numba: 0.65.1
+tkinter: import available
+
+Warnings:
+ - Tk display test skipped in headless/inaccessible display session: couldn't connect to display ":0"
+
+Environment is ready for command-line simulations.
+Run the GUI in a desktop session with an active display.
+
+=== GUI startup (xvfb, 5 s) ===
+GUI_START_PASS

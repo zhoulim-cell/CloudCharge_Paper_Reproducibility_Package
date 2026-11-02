@@ -1,0 +1,5 @@
+﻿Time (s),Boundary,z (m),Total ρ (10⁻¹⁰ C m⁻³),Ion |fraction|,Aerosol |fraction|,Droplet |fraction|
+300,upper,31.726,+0.441,0.384,0.184,0.432
+300,lower,69.274,−0.448,0.148,0.378,0.474
+600,upper,30.853,+0.830,0.321,0.023,0.656
+600,lower,70.147,−0.850,0.040,0.258,0.702

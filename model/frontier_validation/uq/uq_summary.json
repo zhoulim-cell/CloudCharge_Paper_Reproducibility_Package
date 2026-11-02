@@ -1,0 +1,33 @@
+{
+  "sample_count": 10,
+  "ranges": {
+    "current_scale": [
+      0.6,
+      1.4
+    ],
+    "ionization_scale": [
+      0.6,
+      1.4
+    ],
+    "aerosol_scale": [
+      0.5,
+      2.0
+    ],
+    "eddy_diffusivity_scale": [
+      0.4,
+      2.0
+    ],
+    "edge_thickness_scale": [
+      0.6,
+      1.4
+    ]
+  },
+  "key_output": "upper_peak_droplet_charge_e",
+  "correlation": {
+    "current_scale": 0.8909090909090909,
+    "ionization_scale": -0.32121212121212117,
+    "aerosol_scale": -0.09090909090909088,
+    "eddy_diffusivity_scale": -0.35757575757575755,
+    "edge_thickness_scale": -0.32121212121212117
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "parameter_names": [
+    "current_scale",
+    "aerosol_scale",
+    "eddy_diffusivity_scale"
+  ],
+  "truth": [
+    1.3,
+    0.75,
+    1.2
+  ],
+  "posterior_mean": [
+    1.207754208159581,
+    1.0033092935120165,
+    1.0486885249261486
+  ],
+  "posterior_std": [
+    0.03628192783758754,
+    0.13293745843751326,
+    0.15825855817687282
+  ],
+  "note": "Derivative-free ensemble inversion twin experiment; not a formal Bayesian posterior."
+}

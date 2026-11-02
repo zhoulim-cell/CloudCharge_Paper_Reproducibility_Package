@@ -1,0 +1,90 @@
+{
+  "atmosphere": {
+    "altitude_km": 4.0,
+    "ion_pair_production_m3_s": 8000000.0,
+    "current_density_a_m2": 3e-12,
+    "recombination_m3_s": 1.65e-12,
+    "positive_mobility_ref_m2_v_s": 0.00014,
+    "negative_mobility_ref_m2_v_s": 0.00019
+  },
+  "aerosol": {
+    "total_number_m3": 1000000000.0,
+    "mean_radius_m": 4e-08
+  },
+  "droplet": {
+    "spectrum_mode": "fixed_peak",
+    "fixed_peak_number_m3": 200000000.0,
+    "initial_radius_m": 1e-08,
+    "target_radius_m": 1e-05,
+    "growth_time_s": 600,
+    "max_abs_charge_e": 500.0
+  },
+  "spectrum": {
+    "radius_bins": 14,
+    "radius_min_m": 2e-06,
+    "radius_max_m": 2.5e-05,
+    "radius_spacing": "log",
+    "initial_size_distribution": "lognormal",
+    "geometric_std": 1.35,
+    "charge_min_e": -250,
+    "charge_max_e": 250,
+    "initial_charge_mode": "neutral",
+    "initial_charge_std_e": 1.0,
+    "charge_boundary": "reflecting",
+    "growth_law": "scaled_radius",
+    "include_spectrum_feedback": true,
+    "carrier_coupling": "paper_constrained",
+    "store_full_spectrum": true,
+    "max_spectral_cells": 1000000,
+    "normalize_number_each_step": true,
+    "charge_subcycle_safety": 0.8
+  },
+  "domain": {
+    "length_m": 35.0,
+    "grid_points": 61,
+    "cloud_start_m": 2.0,
+    "edge_ramp_m": 10.0,
+    "core_width_m": 11.0
+  },
+  "time_dependent": {
+    "initial_current_density_a_m2": 1.5e-12,
+    "second_current_density_a_m2": 3e-12,
+    "initial_ion_pair_production_m3_s": 8000000.0,
+    "second_ion_pair_production_m3_s": 8000000.0,
+    "step_time_s": 5000,
+    "startup_end_s": 5000,
+    "total_duration_s": 10000,
+    "fit_time_constants": true
+  },
+  "physics": {
+    "solution_mode": "paper2012_spectrum",
+    "attachment_mode": "paper2007_table",
+    "charging_mode": "revised",
+    "field_mode": "poisson_projection",
+    "field_anchor": "bottom",
+    "include_drift_charging": true,
+    "include_ion_diffusion": false,
+    "use_legacy_initialization": false
+  },
+  "numerics": {
+    "duration_s": 10000,
+    "max_dt_s": 5,
+    "min_dt_s": 0.0001,
+    "positivity_safety": 0.8,
+    "field_iterations": 2,
+    "field_relaxation": 0.5,
+    "field_tolerance": 1e-06,
+    "conservative_smoothing": 0.0,
+    "bvp_tolerance": 1e-05,
+    "bvp_max_nodes": 30000,
+    "snapshot_times_s": [
+      0,
+      600,
+      2000,
+      5000,
+      6000,
+      10000
+    ],
+    "diagnostics_interval_s": 100
+  }
+}

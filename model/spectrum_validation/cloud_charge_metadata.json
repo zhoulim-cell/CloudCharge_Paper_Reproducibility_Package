@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "config": {
+      "atmosphere": {
+        "altitude_km": 4.0,
+        "ion_pair_production_m3_s": 8000000.0,
+        "current_density_a_m2": 3e-12,
+        "recombination_m3_s": 1.65e-12,
+        "positive_mobility_ref_m2_v_s": 0.00014,
+        "negative_mobility_ref_m2_v_s": 0.00019
+      },
+      "aerosol": {
+        "total_number_m3": 1000000000.0,
+        "mean_radius_m": 4e-08
+      },
+      "droplet": {
+        "spectrum_mode": "fixed_peak",
+        "fixed_peak_number_m3": 200000000.0,
+        "initial_radius_m": 1e-08,
+        "target_radius_m": 1e-05,
+        "growth_time_s": 600,
+        "max_abs_charge_e": 500.0
+      },
+      "spectrum": {
+        "radius_bins": 14,
+        "radius_min_m": 2e-06,
+        "radius_max_m": 2.5e-05,
+        "radius_spacing": "log",
+        "initial_size_distribution": "lognormal",
+        "geometric_std": 1.35,
+        "charge_min_e": -250,
+        "charge_max_e": 250,
+        "initial_charge_mode": "neutral",
+        "initial_charge_std_e": 1.0,
+        "charge_boundary": "reflecting",
+        "growth_law": "scaled_radius",
+        "include_spectrum_feedback": true,
+        "carrier_coupling": "paper_constrained",
+        "store_full_spectrum": true,
+        "max_spectral_cells": 1000000,
+        "normalize_number_each_step": true,
+        "charge_subcycle_safety": 0.8
+      },
+      "domain": {
+        "length_m": 35.0,
+        "grid_points": 61,
+        "cloud_start_m": 2.0,
+        "edge_ramp_m": 10.0,
+        "core_width_m": 11.0
+      },
+      "time_dependent": {
+        "initial_current_density_a_m2": 1.5e-12,
+        "second_current_density_a_m2": 3e-12,
+        "initial_ion_pair_production_m3_s": 8000000.0,
+        "second_ion_pair_production_m3_s": 8000000.0,
+        "step_time_s": 5000,
+        "startup_end_s": 5000,
+        "total_duration_s": 10000,
+        "fit_time_constants": true
+      },
+      "physics": {
+        "solution_mode": "paper2012_spectrum",
+        "attachment_mode": "paper2007_table",
+        "charging_mode": "revised",
+        "field_mode": "poisson_projection",
+        "field_anchor": "bottom",
+        "include_drift_charging": true,
+        "include_ion_diffusion": false,
+        "use_legacy_initialization": false
+      },
+      "numerics": {
+        "duration_s": 10000,
+        "max_dt_s": 5,
+        "min_dt_s": 0.0001,
+        "positivity_safety": 0.8,
+        "field_iterations": 2,
+        "field_relaxation": 0.5,
+        "field_tolerance": 1e-06,
+        "conservative_smoothing": 0.0,
+        "bvp_tolerance": 1e-05,
+        "bvp_max_nodes": 30000,
+        "snapshot_times_s": [
+          0,
+          600,
+          2000,
+          5000,
+          6000,
+          10000
+        ],
+        "diagnostics_interval_s": 100
+      }
+    },
+    "atmosphere": {
+      "altitude_km": 4.0,
+      "temperature_k": 260.4,
+      "pressure_hpa": 623.0818784445719,
+      "neutral_molecular_concentration_cm3": 1.6495645280135815e+19,
+      "mobility_scale": 1.355785377932215,
+      "positive_mobility_m2_v_s": 0.0001898099529105101,
+      "negative_mobility_m2_v_s": 0.00025759922180712086,
+      "positive_diffusivity_m2_s": 4.263036637393601e-06,
+      "negative_diffusivity_m2_s": 5.78554972217703e-06
+    },
+    "attachment": {
+      "beta_positive_m3_s": 1.610000000000001e-12,
+      "beta_negative_m3_s": 2.27e-12,
+      "gamma_positive_m3_s": 3.6400000000000015e-12,
+      "gamma_negative_m3_s": 4.980000000000002e-12,
+      "mode": "paper2007_table",
+      "source": "Zhou and Tinsley (2007), Table 1",
+      "requested_altitude_km": 4.0,
+      "used_altitude_km": 4.0,
+      "requested_aerosol_radius_m": 4e-08,
+      "used_aerosol_radius_m": 4e-08,
+      "table_clamped": false
+    },
+    "spectral_definition": {
+      "state": "N(r_i, k, z_j, t) bin-integrated number concentration [m^-3]",
+      "charge_variable": "k = integer elementary charges per droplet; q is reserved for ion-pair production",
+      "radius_bins": 14,
+      "charge_states": 501,
+      "spectral_cells": 427854,
+      "charge_process": "conservative ion-attachment birth-death master equation",
+      "radius_process": "scaled_radius",
+      "feedback": "first charge moment enters Gauss law; full spectrum enters W+ and W-",
+      "carrier_coupling": "paper_constrained"
+    },
+    "model_limits": "One-dimensional prescribed cloud-droplet number profile. The spectral model includes prescribed condensational growth and ion diffusion/drift charging, but not droplet collision-coalescence, sedimentation, turbulent mixing, evaporation residues, or charge-dependent breakup."
+  },
+  "snapshot_times_s": [
+    0.0,
+    600.0,
+    2000.0,
+    5000.0,
+    6000.0,
+    10000.0
+  ],
+  "diagnostics_summary": {
+    "solver_mode": "paper2012_spectrum",
+    "post_step_tau_top_s": 1335.0468420055433,
+    "post_step_tau_bottom_s": 1333.6709448629383,
+    "carrier_response_tau_ion_s": 100.0,
+    "carrier_response_tau_aerosol_s": 648.0,
+    "paper_droplet_tau_reference_s": 800.0,
+    "paper_droplet_tau_source": "published-case anchor",
+    "spectral_carrier_coupling": "paper_constrained",
+    "upper_peak_droplet_charge_e": 96.51077452379273,
+    "lower_peak_droplet_charge_e": -111.2898738200516,
+    "upper_integrated_space_charge_c_m2": 5.3133763066243355e-09,
+    "lower_integrated_space_charge_c_m2": -5.569053766522543e-09,
+    "opposite_droplet_sign_test": true,
+    "opposite_space_charge_sign_test": true,
+    "top_spectrum_index": 12.0,
+    "bottom_spectrum_index": 48.0,
+    "core_spectrum_index": 30.0,
+    "time_steps": 2000.0,
+    "min_dt_s": 5.0,
+    "max_dt_s": 5.0,
+    "max_charge_subcycles": 1.0,
+    "final_max_relative_current_residual": 1.3463226115771934e-16,
+    "final_max_number_conservation_error": 4.470348358154296e-16,
+    "final_charge_grid_edge_fraction": 1.1571135036251146e-06,
+    "final_radius_grid_edge_fraction": 0.005977336421476596
+  }
+}

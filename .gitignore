@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.numba_cache/
+*.nbc
+*.nbi
+.venv/
+venv/
+env/
+.DS_Store
+._*
+__MACOSX/
+*.log
+*.tmp
+*.bak
+generated_figures/
+local_runs/
+scratch/
+# Large paper-supporting data are archived in Zenodo instead of Git.
+*.npz
+*.tif
+*.tiff
+*.zip
